@@ -1,13 +1,13 @@
 "use strict";
 
 // Виконай додавання 0,1 і 0,2 добийся математично правильної відповіді.
-const sumNum = 0.1 + 0.2;
-alert(sumNum.toFixed(1));
+const sumNum =(0.1 + 0.2).toFixed(1);
+alert(`0.1 + 0.2 = ${sumNum}`);
 
 // додавання рядка "1" і цифри 2, добийся математично правильної відповіді.
 const valueString = +'1';
 const valueNumber = 2;
-alert(valueString + valueNumber);
+alert(`+"1"+ 2 = ${valueString + valueNumber}`);
 
 /*Користувач вказує обсяг флешки в Гб.
 Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.*/
@@ -29,14 +29,14 @@ const numThreeDigit = prompt('Enter a three-digit number', '');
 const num3Digit = numThreeDigit % 10;
 const num2Digit = Math.floor(numThreeDigit / 10) % 10;
 const num1Digit = Math.floor(numThreeDigit  /100) % 10;
-alert ('' + num3Digit + num2Digit + num1Digit);
+alert ('Reverse number ' + num3Digit + num2Digit + num1Digit);
 
 
 
 // Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
 
 const deposit = prompt('Enter deposit amount', '');
-const numberMonth = prompt('Enter number month', '');
+const numberMonth = prompt('Enter number of month', '');
 const amountPercentForMonth = 5 / 12;
 const amountPercentMoneyForMonth = (amountPercentForMonth * deposit / 100).toFixed(2);
 const sumDepositPercent = deposit + amountPercentMoneyForMonth * numberMonth;
