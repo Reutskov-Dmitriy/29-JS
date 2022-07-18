@@ -39,6 +39,7 @@ const deposit = prompt('Enter deposit amount', '');
 const numberMonth = prompt('Enter number of month', '');
 const amountPercentForMonth = 5 / 12;
 const amountPercentMoneyForMonth = (amountPercentForMonth * deposit / 100).toFixed(2);
-const sumDepositPercent = deposit + amountPercentMoneyForMonth * numberMonth;
-alert (`Your percent for ${numberMonth} months ( ${amountPercentMoneyForMonth * numberMonth} )
+const sumDepositPercent = +deposit + amountPercentMoneyForMonth * numberMonth;
+alert (`Rate of interest (5%)
+Your percent for ${numberMonth} months ( ${amountPercentMoneyForMonth * numberMonth} )
 Your deposit with percent for ${numberMonth}  months  ( ${sumDepositPercent} )`)
